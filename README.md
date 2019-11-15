@@ -31,3 +31,17 @@ certbot certonly -a certbot-dns-selectel:dns-selectel \
   -m admin@example.com \
   --agree-tos -n
 ```
+
+## Use Docker
+
+```bash
+docker run -v /path/to/credentials.ini:/credentials.ini -ti \
+  --name example.com.certbot \
+  certbot-dns-selectel certonly -a certbot-dns-selectel:dns-selectel \
+  --certbot-dns-selectel:dns-selectel-credentials /credentials.ini \
+  --certbot-dns-selectel:dns-selectel-propagation-seconds 30 \
+  -d example.com \
+  -d "*.example.com" \
+  -m admin@example.com \
+  --agree-tos -n
+```
