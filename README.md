@@ -10,7 +10,7 @@ https://my.selectel.ru/profile/apikeys
 
 pip install certbot-dns-selectel
 
-##Credentials File
+## Credentials File
 
 ```
 certbot_dns_selectel:dns_selectel_api_key = XXXXXXXXXXXXXXXXXXXXXXXXX_XXXXXX
