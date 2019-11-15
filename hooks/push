@@ -2,7 +2,7 @@
 set -ex
 
 WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-source "$WORK_DIR/lib/common"
+source "$WORK_DIR/hooks/lib/common"
 
 CERTBOT_VERSION=$(GetCerbotVersionFromTag "$DOCKER_TAG")
 

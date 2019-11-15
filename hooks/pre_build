@@ -2,7 +2,7 @@
 set -ex
 
 WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-source "$WORK_DIR/lib/common"
+source "$WORK_DIR/hooks/lib/common"
 
 RegisterQemuHandlers
 for TARGET_ARCH in "${ALL_TARGET_ARCH[@]}"; do
