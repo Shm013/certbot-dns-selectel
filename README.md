@@ -2,11 +2,11 @@ Selectel DNS Authenticator plugin for Certbot
 ==============================================
 A certbot dns plugin to obtain certificates using Selectel DNS.
 
-##Obtain DNS API key
+## Obtain DNS API key
 
 https://my.selectel.ru/profile/apikeys
 
-##Install
+## Install
 
 pip install certbot-dns-selectel
 
@@ -20,7 +20,7 @@ certbot_dns_selectel:dns_selectel_api_key = XXXXXXXXXXXXXXXXXXXXXXXXX_XXXXXX
 chmod 600 /path/to/credentials.ini
 ```
 
-##Obtain Certificates
+## Obtain Certificates
 
 ```bash
 certbot certonly -a certbot-dns-selectel:dns-selectel \
