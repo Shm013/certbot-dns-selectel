@@ -53,3 +53,9 @@ tests/letstest/venv/
 # vim-project
 .vim/
 .vimrc
+
+bin/
+include/
+lib/
+lib64
+pip-selfcheck.json
